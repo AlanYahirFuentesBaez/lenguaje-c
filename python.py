@@ -1,12 +1,11 @@
-numero = float(input('Ingresa el número de personas a registrar:'))
+from turtle import *
 
-while(numero > 0):
-    numero=numero-1
-    nombre=input('ingresa el nombre: ')
-    edad=input('Ingresa la edad: ' )
-    curp=input('Ingresa el curp: ')
-    print(nombre+edad+curp)
-    print('Ingresa la siguiente persona')
-
-print('Has terminado de ingresar las personas.')
-
+color('red', 'yellow')
+begin_fill()
+while True:
+    forward(200)
+    left(170)
+    if abs(pos()) < 1:
+        break
+end_fill()
+done()
