@@ -1,11 +1,10 @@
-from turtle import *
+import math
 
-color('red', 'yellow')
-begin_fill()
-while True:
-    forward(200)
-    left(170)
-    if abs(pos()) < 1:
-        break
-end_fill()
-done()
+num=1
+
+while(num!=0):
+    print('Programa que calcula la raíz cuadrada')
+    num = float(input('Ingresa el número que quieres calcular:'))
+    print('La raiz cuadrada es:')
+    print(math.sqrt(num))
+
