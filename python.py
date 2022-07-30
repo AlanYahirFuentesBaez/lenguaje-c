@@ -1,14 +1,24 @@
 import math
+def litros_galones(lts):
+    return lts*3.78541
 
-num=1
+def galones_litros(gal):
+    return gal/3.78541
 
-while(num!=0):
-    print('Programa que calcula litros a galones ')
-    print("progama que calcula galones a litros")
+print("Quiere convertir litros a galones, presione 1 o galones a litros, presione 2")
+pregunta = input()
+pregunta2="si"
+while(pregunta2 == "si"):
     
-    num = float(input('ingrese la cantidad a calcular:'))
-    print('el litro es:')
-    print(3.7854*(num))
-    print('el galon es:')
-    print(0.264172*(num))
+    if(pregunta == "1"):
+        litros = float(input("Ingrese los litros: "))
+        print("Los galones son: ", litros_galones(litros))
+        
+    elif(pregunta == "2"):
+        galones = float(input("Ingrese los galones: "))
+        print("Los litros son: ", galones_litros(galones))
 
+    print("Deseas volver a calcular? si/no")
+    pregunta2 = input()
+    
+   
