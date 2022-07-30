@@ -8,7 +8,7 @@ while(num!=0):
     
     num = float(input('ingrese la cantidad a calcular:'))
     print('el litro es:')
-    print(0.264172*(num))
-    print('el galon es:')
     print(3.7854*(num))
+    print('el galon es:')
+    print(0.264172*(num))
 
