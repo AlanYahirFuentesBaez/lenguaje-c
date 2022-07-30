@@ -20,5 +20,9 @@ while(pregunta2 == "si"):
 
     print("Deseas volver a calcular? si/no")
     pregunta2 = input()
+    if(pregunta2=="no"):
+        break
+    print("Quiere convertir litros a galones, presione 1 o galones a litros, presione 2")
+    pregunta = input()
     
    
