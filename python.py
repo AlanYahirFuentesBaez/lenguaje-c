@@ -3,12 +3,12 @@ import math
 num=1
 
 while(num!=0):
-    print('Programa que calcula la raíz cuadrada')
-    print("progama que calcula la potencia cuadrada")
+    print('Programa que calcula litros a galones ')
+    print("progama que calcula galones a litros")
     
-    num = float(input('Ingresa el número que quieres calcular:'))
-    print('La raiz cuadrada es:')
-    print(math.sqrt(num))
-    print('La potencia cuadrada es:')
-    print(pow(num,2))
+    num = float(input('ingrese la cantidad a calcular:'))
+    print('el litro es:')
+    print(0.264172*(num))
+    print('el galon es:')
+    print(3.7854*(num))
 
