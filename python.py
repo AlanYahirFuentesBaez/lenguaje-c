@@ -23,12 +23,11 @@ pregunta2="si"
 while(pregunta2 == "si"):
         
     if(pregunta == "1"):
-        litros = float(input("Ingrese los litros: "))
-        print("Los galones son: ", litros_galones(litros))
-
+        litros = float(input("Ingrese litros: "))
+        print("Los galones son: ", galones_litros(litros))
     elif(pregunta == "2"):
-        galones = float(input("Ingrese los galones: "))
-        print("Los litros son: ", galones_litros(galones))
+        galones = float(input("Ingrese galones: "))
+        print("Los litros son: ", litros_galones(galones))
 
     print("Deseas volver a calcular? si/no")
     pregunta2 = input()
