@@ -1,28 +1,28 @@
 import math
-def litros_galones(lts):
-    return lts*3.78541
+def raiz_cuadrada :
+    return raiz(math.sqrt(num))
 
-def galones_litros(gal):
-    return gal/3.78541
+def potencia_cuadrada :
+    return potencia(pow(num,2))
 
-print("Quiere convertir litros a galones, presione 1 o galones a litros, presione 2")
+print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
 pregunta = input()
 pregunta2="si"
 while(pregunta2 == "si"):
     
     if(pregunta == "1"):
-        litros = float(input("Ingrese los litros: "))
-        print("Los galones son: ", litros_galones(litros))
+        Raiz = float(input("Ingrese el numero: "))
+        print("La raiz cuadrada: ", raiz_cuadrada(raiz))
         
     elif(pregunta == "2"):
-        galones = float(input("Ingrese los galones: "))
-        print("Los litros son: ", galones_litros(galones))
+        Potencia = float(input("Ingrese el numero: "))
+        print("La potencia cuadrada: ", potencia_cuadrada(potencia))
 
     print("Deseas volver a calcular? si/no")
     pregunta2 = input()
     if(pregunta2=="no"):
         break
-    print("Quiere convertir litros a galones, presione 1 o galones a litros, presione 2")
+    print("Quiere convertir a raiz cuadrada, presione 1 o a potencia cuadrada, presione 2")
     pregunta = input()
     
    
