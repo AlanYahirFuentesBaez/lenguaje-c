@@ -4,9 +4,11 @@ def sum(num1,num2):
 
 
 print("Programa que suma 2 números")
+print("Escribe 2 numeros a sumar")
+n=float(input())
+m=float(input())
 
-print(sum(3,2))
-print(sum(10,5))
-n=10000
-print(sum(8,n))
+
+print(sum(m,n))
+
 
