@@ -1,33 +1,28 @@
 #El import es la 
 import math
-def raiz_cuadrada :
-    return raiz(math.sqrt(num))
+class Node:
+    def __init__(self, data):
+        self.left = None
+        self.right = None
+        self.data = data
 
-def potencia_cuadrada :
-    return potencia(pow(num,2))
+class persona:
+    def __init__(self, nombre, edad, peso, altura):
+        self.nombre = nombre
+        self.edad = edad
+        self.peso = peso
+        self.altura = altura
 
-print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
-pregunta = input()
 
-#Es una variable que va a permitir ingresar al ciclo while
-pregunta2="si"
+persona=persona("Juan", 20, 70, 1.70)
 
-#Empieza el ciclo while
-while(pregunta2 == "si"):
-        
-    if(pregunta == "1"):
-        Raiz = float(input("Ingrese el numero: "))
-        print("La raiz cuadrada: ", raiz_cuadrada(raiz))
-        
-    elif(pregunta == "2"):
-        Potencia = float(input("Ingrese el numero: "))
-        print("La potencia cuadrada: ", potencia_cuadrada(potencia))
-
-    print("Deseas volver a calcular? si/no")
-    pregunta2 = input()
-    if(pregunta2=="no"):
-        break
-    print("Quiere convertir a raiz cuadrada, presione 1 o a potencia cuadrada, presione 2")
-    pregunta = input()
-    
+print(persona)
+root = Node(10)
+root.left = Node(34)
+root.right = Node(89)
+root.left.left = Node(45)
+root.left.left.left = Node(5)
+root.left.right = Node(50)
    
+print (root)
+print (root.left.left.left.data)
