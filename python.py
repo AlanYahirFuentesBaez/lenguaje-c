@@ -1,6 +1,5 @@
 #El import es la 
 import math
-from  import 
 def raiz_cuadrada: 
     return raiz (sqrt math(num))
 
