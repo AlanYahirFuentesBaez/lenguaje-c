@@ -1,11 +1,12 @@
-#El import es la 
 import math
-def raiz_cuadrada: 
-    return raiz (sqrt math(num))
+def raiz_cuadrada(n):
+    raiz = math.sqrt(n)    
+    return raiz
 
 
-def potencia_cuadrada:
-    return potencia (math.pow(num,2))
+def potencia_cuadrada(m):
+    potencia=math.pow(m,2)
+    return potencia 
 
 print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
 pregunta = input()
@@ -14,21 +15,21 @@ pregunta = input()
 pregunta2="si"
 
 #Empieza el ciclo while
-while(pregunta2 == "si"):
+while(pregunta2 == "si"):    
         
     if(pregunta == "1"):
         Raiz = float(input("Ingrese el numero: "))
-        print("La raiz cuadrada: ", raiz_cuadrada(raiz))
+        print("La raiz cuadrada: ", raiz_cuadrada(Raiz))
         
     elif(pregunta == "2"):
         Potencia = float(input("Ingrese el numero: "))
-        print("La potencia cuadrada: ", potencia_cuadrada(potencia))
+        print("La potencia cuadrada: ", potencia_cuadrada(Potencia))
 
-    print("Deseas volver a calcular? si/no")
-    pregunta2 = input()
+    pregunta2 = input("Deseas volver a calcular? si/no: ")
     if(pregunta2=="no"):
         break
-    print("Quiere convertir a raiz cuadrada, presione 1 o a potencia cuadrada, presione 2")
+    
+    print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
     pregunta = input()
     
    
