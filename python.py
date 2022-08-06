@@ -1,10 +1,12 @@
 #El import es la 
 import math
-def raiz_cuadrada :
-    return raiz(math.sqrt(num))
+from  import 
+def raiz_cuadrada: 
+    return raiz (sqrt math(num))
 
-def potencia_cuadrada :
-    return potencia(pow(num,2))
+
+def potencia_cuadrada:
+    return potencia (math.pow(num,2))
 
 print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
 pregunta = input()
