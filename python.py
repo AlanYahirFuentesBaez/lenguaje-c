@@ -3,7 +3,6 @@ def raiz_cuadrada(n):
     raiz = math.sqrt(n)    
     return raiz
 
-
 def potencia_cuadrada(m):
     potencia=math.pow(m,2)
     return potencia
@@ -15,6 +14,14 @@ def area_triangulo(b,h):
 def area_rombo(D,d):
     area=(D*d)/2
     return area
+
+print("Ingresa cuanto mide el lado de tu cubo:")
+lado=float(input())
+areaCuadrado=potencia_cuadrada(lado)
+volumenCubo=areaCuadrado*lado
+print("El volumen del cubo es:",volumenCubo)
+
+
 
 print("Ingresa cuanto mide la diagonal mayor de tu rombo:")
 diagonalMayor=float(input())
