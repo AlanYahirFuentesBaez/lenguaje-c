@@ -1,4 +1,9 @@
 import math
+#area de un circulo
+
+#volumen de la esfera
+
+
 def raiz_cuadrada(n):
     raiz = math.sqrt(n)    
     return raiz
@@ -15,11 +20,22 @@ def area_rombo(D,d):
     area=(D*d)/2
     return area
 
+#area de un cuadrado
+print("Ingresa cuanto mide tu cuadrado:")
+lado=float(input())
+areaCuadrado=potencia_cuadrada(lado)
+print("El area del cuadrado es:",areaCuadrado)
+
+#volumen cubo
 print("Ingresa cuanto mide el lado de tu cubo:")
 lado=float(input())
 areaCuadrado=potencia_cuadrada(lado)
 volumenCubo=areaCuadrado*lado
 print("El volumen del cubo es:",volumenCubo)
+
+pi=3.1416
+#area de un circulo
+#volumen de la esfera
 
 
 
@@ -31,10 +47,7 @@ areaRombo=area_rombo(diagonalMayor,diagonalMenor)
 print("El area del Rombo es:",areaRombo)
 
 
-print("Ingresa cuanto mide tu cuadrado:")
-lado=float(input())
-areaCuadrado=potencia_cuadrada(lado)
-print("El area del cuadrado es:",areaCuadrado)
+
 
 print("Ingresa cuanto mide base del triangulo:")
 base=float(input())
