@@ -6,7 +6,26 @@ def raiz_cuadrada(n):
 
 def potencia_cuadrada(m):
     potencia=math.pow(m,2)
-    return potencia 
+    return potencia
+
+def area_triangulo(b,h):
+    area=(b*h)/2
+    return area
+
+
+print("Ingresa cuanto mide tu cuadrado:")
+lado=float(input())
+areaCuadrado=potencia_cuadrada(lado)
+print("El area del cuadrado es:",areaCuadrado)
+
+print("Ingresa cuanto mide base del triangulo:")
+base=float(input())
+print("Ingresa cuanto mide altura del triangulo:")
+altura=float(input())
+areaTriangulo=area_triangulo(base,altura)
+print("El area del triánguloe es:",areaTriangulo)
+
+
 
 print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
 pregunta = input()
