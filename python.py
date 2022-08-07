@@ -12,6 +12,17 @@ def area_triangulo(b,h):
     area=(b*h)/2
     return area
 
+def area_rombo(D,d):
+    area=(D*d)/2
+    return area
+
+print("Ingresa cuanto mide la diagonal mayor de tu rombo:")
+diagonalMayor=float(input())
+print("Ingresa cuanto mide la diagonal menor de tu rombo:")
+diagonalMenor=float(input())
+areaRombo=area_rombo(diagonalMayor,diagonalMenor)
+print("El area del Rombo es:",areaRombo)
+
 
 print("Ingresa cuanto mide tu cuadrado:")
 lado=float(input())
