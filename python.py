@@ -1,9 +1,11 @@
 import math
-#area de un circulo
 
-#volumen de la esfera
-
-
+def area_circulo(π*r²):
+    area=(π*r²)
+    return area
+def volumen_esfera(π*r²):
+    volumen=(4/3 πr³.)
+    return volumen
 def raiz_cuadrada(n):
     raiz = math.sqrt(n)    
     return raiz
@@ -19,6 +21,18 @@ def area_triangulo(b,h):
 def area_rombo(D,d):
     area=(D*d)/2
     return area
+print("Ingresa cuanto mide el circulo:")
+area=float(input())
+areaCirculo=area_circulo()
+areaCirculo=areaCirculo*area
+print("El area del circulo es:",areaCirculo)
+
+print("Ingresa cuanto el area de la esfera:")
+volumen=float(input())
+volumenesfera=volumen_esfera()
+volumenesfera=volumenesfera*area
+print("El volumen de la esfera es:",volumenesfera)
+
 
 #area de un cuadrado
 print("Ingresa cuanto mide tu cuadrado:")
