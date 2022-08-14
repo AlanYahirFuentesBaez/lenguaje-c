@@ -2,19 +2,14 @@ def area_triangulo(b,h):
     area=(b*h)/2
     return area
 
-
-
-base=0
-while(base <= 100):
-    base=base+1
-    if(base==101):
-        break
-    areaT=area_triangulo(base,10)
-    print("La base mide:\t"+ str(base) + " la altura mide:10, el area es:\n\t" + str(areaT))
-
-
-    
-    
-    #print("Quiere convertir a raiz cuadrada , presione 1 o a potencia cuadrada, presione 2")
-    #pregunta = input()
-    
+def tablaMultiplicar(tabla):
+    multiplicador=0
+    while(multiplicador<10):        
+        multiplicador=multiplicador+1
+        resultado=tabla*multiplicador
+        print("",tabla,"*",multiplicador,"resultado es: ",resultado)
+        
+numero=0
+while(numero<10):
+    numero=numero+1
+    print(tablaMultiplicar(numero))
