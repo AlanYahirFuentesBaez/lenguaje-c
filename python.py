@@ -13,7 +13,7 @@ def area_circulo(radioCirculo):
     return areaCirculo
 
 def volumen_esfera(radioEsfera):
-    volumen=((4/3)*(math.pi*potencia_cubica(radioEsfera)))
+    volumenEsfera=((4/3)*(math.pi*potencia_cubica(radioEsfera)))
     return volumenEsfera
 
 def raiz_cuadrada(n):
