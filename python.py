@@ -1,18 +1,25 @@
 import math
 
-def area_circulo(π*r²):
-    area=(π*r²)
-    return area
-def volumen_esfera(π*r²):
-    volumen=(4/3 πr³.)
-    return volumen
+def potencia_cuadrada(m):
+    potenciaCuadrada=math.pow(m,2)
+    return potenciaCuadrada
+
+def potencia_cubica(m):
+    potenciaCubica=math.pow(m,3)
+    return potenciaCubica
+
+def area_circulo(radioCirculo):
+    areaCirculo=((math.pi)*potencia_cuadrada(radioCirculo))
+    return areaCirculo
+
+def volumen_esfera(radioEsfera):
+    volumen=((4/3)*(math.pi*potencia_cubica(radioEsfera)))
+    return volumenEsfera
+
 def raiz_cuadrada(n):
     raiz = math.sqrt(n)    
     return raiz
 
-def potencia_cuadrada(m):
-    potencia=math.pow(m,2)
-    return potencia
 
 def area_triangulo(b,h):
     area=(b*h)/2
@@ -21,17 +28,17 @@ def area_triangulo(b,h):
 def area_rombo(D,d):
     area=(D*d)/2
     return area
-print("Ingresa cuanto mide el circulo:")
-area=float(input())
-areaCirculo=area_circulo()
-areaCirculo=areaCirculo*area
+
+
+print("Ingresa cuanto mide el radio del circulo:")
+radioC=float(input())
+areaCirculo=area_circulo(radioC)
 print("El area del circulo es:",areaCirculo)
 
-print("Ingresa cuanto el area de la esfera:")
-volumen=float(input())
-volumenesfera=volumen_esfera()
-volumenesfera=volumenesfera*area
-print("El volumen de la esfera es:",volumenesfera)
+print("Ingresa cuanto mide el radio de la esfera:")
+radioE=float(input())
+volumenEsfera=volumen_esfera(radioE)
+print("El volumen de la esfera es:",volumenEsfera)
 
 
 #area de un cuadrado
