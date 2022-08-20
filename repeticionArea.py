@@ -9,7 +9,12 @@ def tablaMultiplicar(tabla):
         resultado=tabla*multiplicador
         print("",tabla,"*",multiplicador,"resultado es: ",resultado)
         
+<<<<<<< HEAD
 numero=9
 while(numero<10):
+=======
+numero=20
+while(numero<=20):
+>>>>>>> python
     numero=numero+1
     print(tablaMultiplicar(numero))
