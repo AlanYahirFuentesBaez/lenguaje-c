@@ -20,6 +20,7 @@ def generaUrlBusqueda(terminoBusqueda,ordenamiento,cantidadItems ):
 if(len(sys.argv) == 1):
     print("Orden de parámetros: alt , imgUrl , href , tipoBanner")
     print("Ejemplo: py banner.py PUMA-MAYZE dpstreet.jpg /marcas-dpstreet/adidas-marcas-dpstreet 1 > banner.html")
+
 elif(sys.argv[4] == "1"):
     #banner del home
     alt=sys.argv[1]    
@@ -29,6 +30,15 @@ elif(sys.argv[4] == "1"):
     codigo='<div class="only-desktop">\n\t<a href="' + href +' " class="bloque_link">\n\t\t<img alt="DPSTREET-'+ alt + '"  src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/banner-dps-home/desk' + imgUrl +'.jpg">\n\t</a>\n</div>\n\n<div class="only-mobile">\n\t<a href="' + href +' ">\n\t\t<img alt="DPSTREET-' + alt +' " class="lazyload" src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/banner-dps-home/mobile'+ imgUrl +'.jpg">\n\t</a>\n</div>'
     print(codigo)
 
+elif(sys.argv[4] == "2"):
+    #uno sola imagen con su url
+    alt=sys.argv[1]    
+    imgUrl=sys.argv[2]    
+    href=sys.argv[3]
+    
+
+    codigo='<div class="grid3">\n\t<a href="' + href +' " class="bloque_link">\n\t\t<img alt="DPSTREET-'+ alt + '"  src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images/banner-dps-home/' + imgUrl +'.jpg">\n\t</a>\n</div>'
+    print(codigo)
 
 
 elif(sys.argv[4] == "3"):
@@ -67,3 +77,5 @@ elif(sys.argv[5] == "2"):
     
     codigo='<div class="only-desktop">\n\t<a href="' + href +' " class="bloque_link">\n\t\t<img alt="DPSTREET-'+ alt + '"  src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images' + imgUrlDesk +'.jpg">\n\t</a>\n</div>\n\n<div class="only-mobile">\n\t<a href="' + href +' ">\n\t\t<img alt="DPSTREET-' + alt +' " class="lazyload" src="https://dp-imagenes.s3.amazonaws.com/wcsstore/DpstreetStorefrontAssetStore/images' + imgUrlMobile +'.jpg' +'">\n\t</a>\n</div>'
     print(codigo)
+
+
